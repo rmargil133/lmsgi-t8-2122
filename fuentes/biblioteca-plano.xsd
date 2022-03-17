@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="BIBLIOTECA">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="LIBRO" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="LIBRO">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TITULO" />
+				<xs:element ref="AUTOR" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="ANYO" minOccurs="0" />
+				<xs:element ref="EDITORIAL" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="COD" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="TITULO" type="xs:string" />
+	<xs:element name="AUTOR" type="xs:string" />
+	<xs:element name="ANYO" type="xs:string" />
+	<xs:element name="EDITORIAL" type="xs:string" />
+
+</xs:schema>
