@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="APLICACION">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name ="LIBRO">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DESCRIPCION" type="xs:string"/>
+                            <xs:element name="DIA" type="xs:string"/>
+                            <xs:element name="MES" type="xs:string"/>
+                            <xs:element name="ANYO" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="NOMBRE" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
